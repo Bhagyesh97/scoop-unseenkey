@@ -1,0 +1,31 @@
+{
+    "version": "0.1.0",
+    "description": "Use API keys without seeing them: a local vault and policy broker for AI agents, scripts and the people you hire.",
+    "homepage": "https://github.com/Bhagyesh97/unseenkey",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Bhagyesh97/unseenkey/releases/download/v0.1.0/usk-v0.1.0-x86_64-pc-windows-msvc.zip",
+            "hash": "83887c8ade5e6751fd9e2a8b479b724fe0c83d70154d23ad7b41d9b649fe5c12",
+            "extract_dir": "usk-v0.1.0-x86_64-pc-windows-msvc"
+        }
+    },
+    "bin": [
+        "usk.exe",
+        "uskd.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/Bhagyesh97/unseenkey"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Bhagyesh97/unseenkey/releases/download/v$version/usk-v$version-x86_64-pc-windows-msvc.zip",
+                "extract_dir": "usk-v$version-x86_64-pc-windows-msvc"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/Bhagyesh97/unseenkey/releases/download/v$version/SHA256SUMS"
+        }
+    }
+}
